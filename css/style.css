@@ -5,6 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/Surce-Sans-Pro/SourceSansPro-Light.ttf");
+}
 /* =======================================================
 *
 * 	Template Style
@@ -44,19 +49,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
 }
 
-::-webkit-selection {
-  color: #818892;
-  background: #f9f6f0;
-}
-
-::-moz-selection {
-  color: #818892;
-  background: #f9f6f0;
-}
-
 ::selection {
-  color: #818892;
-  background: #f9f6f0;
+  color: white;
+  background: #ff6200;
 }
 
 .edge--bottom {
@@ -306,10 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
-  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.3);
   margin-top: 0px;
   top: 0;
 }
@@ -451,6 +443,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -35px;
   padding: 0;
   width: 101%;
+  box-shadow: 0px -3px 10px #716e6eb8;
 }
 
 #fh5co-intro {
@@ -485,17 +478,17 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   padding: 40px;
   background: #fff;
-  -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-  -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-  -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-  -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-  box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
   z-index: 7;
   flex-grow: 1;
   /*background-size: cover;
   position: relative;
   background-repeat: no-repeat;*/
 }
+#fh5co-intro .fh5co-block-pro {
+  box-shadow: 5px 5px 30px 5px rgba(163, 174, 184, 0.4), -5px -5px 30px 5px rgba(163, 174, 184, 0.4);
+  z-index: 10;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-intro .fh5co-block {
     width: 100%;
@@ -587,6 +580,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   padding: 0;
   width: 101%;
+  box-shadow: 0px 4px 12px #716e6eb8, 0px -3px 10px #716e6eb8;
 }
 #fh5co-services:before {
   top: 0;
@@ -659,6 +653,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   padding: 0;
   width: 101%;
+  box-shadow: 0px 4px 12px #201f1f, 0px -3px 10px #201f1f;
 }
 #fh5co-counters:before {
   top: 0;
@@ -824,6 +819,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   padding: 0;
   width: 101%;
+  box-shadow: 0px 4px 12px #716e6eb8, 0px -3px 10px #716e6eb8;
 }
 #fh5co-work:before {
   top: 0;
@@ -1345,14 +1341,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .titulo_plan {
-  font-weight: 300;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 .titulo_precio {
-  font-weight: 300;
-  font-size: 1.9em
+  font-size: 2.3em
 }
 
 .badge {
